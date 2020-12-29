@@ -117,7 +117,7 @@ def create_pandas_table_frame_dictionary(dict, transpose):
 def get_unique_list(alist):
     """
     a function that gives back a list with unique values
-    i.e. no repetions. for example, given a list like
+    i.e. no repetitions. for example, given a list like
     [8, 8, 7, 7, 1, 2, 3], we want to return this list
     [8, 7, 1, 2, 3]
     :param alist: a list of items

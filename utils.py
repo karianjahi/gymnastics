@@ -28,6 +28,37 @@ def month_abb(month_numeric):
     if month_numeric <= 12 and month_numeric > 0:
         return month_abb[month_numeric - 1]
 
+def month_abb_to_numeric(month_abb):
+    """
+    Convert month abb to numeric
+    :param month_abb: numeric month
+    :return: integer
+    """
+    if month_abb == "Jan":
+        return "01"
+    if month_abb == "Feb":
+        return "02"
+    if month_abb == "Mar":
+        return "03"
+    if month_abb == "Apr":
+        return "04"
+    if month_abb == "May":
+        return "05"
+    if month_abb == "Jun":
+        return "06"
+    if month_abb == "Jul":
+        return "07"
+    if month_abb == "Aug":
+        return "08"
+    if month_abb == "Sep":
+        return "09"
+    if month_abb == "Oct":
+        return "10"
+    if month_abb == "Nov":
+        return "11"
+    if month_abb == "Dec":
+        return "12"
+
 def replace_special_accents(string):
     """
     :param string: a string with special accents (or none)

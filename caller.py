@@ -23,3 +23,6 @@ for file in ausfahrliste_files:
                     google_api_key=google_api_key,
                     city=city,
                     directory=save_directory).save_day_file()
+
+
+

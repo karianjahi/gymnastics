@@ -1,12 +1,13 @@
 import glob
 from morgengold_02_day_delivery_tables import DayDeliveryFile
+from morgengold_01_extract_text_from_pdf_file import ExtractMorgenGoldContents
 
 # ===== Required initial parameters =========
 home_street="Elsa-Braendstroem-Str."
 house_no="15a"
 plz="76228"
-city = "Karlsruhe"
-google_api_key="AIzaSyD90_A54hZlmwPuGz0T99tbvlAyD8zsmdE"
+city="Karlsruhe"
+google_api_key=""
 save_directory="/home/karianjahi/gymnastics/gymnastics/day_info_tables"
 # ====== End of required parameters ===========
 

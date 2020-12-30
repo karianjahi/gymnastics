@@ -151,11 +151,11 @@ class DayDeliveryFile:
                                                              address_pair[1])
             print("Distance between " +
                   address_pair[0] +
-                  " and" +
+                  " and " +
                   address_pair[1] +
                   " = " +
                   str(distance) +
-                  " km")
+                  " km" + ". ===================================> Date = " + self.create_extract_object().capture_date_nice_format(page_number=1))
 
             distances.append(distance)
         return distances
@@ -182,19 +182,5 @@ class DayDeliveryFile:
             save_table_to_file(table=self.add_distance_to_table(),
                                filename=self.directory + "/" + filename)
         else:
-            print("file " + filename + " already exists!")
-
-
-# my_file = "/home/karianjahi/gymnastics/gymnastics/delivery_files/2020-12-27_Ausfahrliste.pdf"
-# obj = DayDeliveryFile(my_file,
-#                       "Elsa-Braendstroem-Str.",
-#                       "15a",
-#                       "76228",
-#                       "Karlsruhe",
-#                       "AIzaSyD90_A54hZlmwPuGz0T99tbvlAyD8zsmdE",
-#                       "/home/karianjahi/gymnastics/gymnastics/day_info_tables"
-#                       )
-# print(obj.save_day_file())
-#
-# for pair in obj.get_address_pairs_sequentially():
-#     print(pair)
+            # print("file " + filename + " already exists!")
+            "Do Nothing"
